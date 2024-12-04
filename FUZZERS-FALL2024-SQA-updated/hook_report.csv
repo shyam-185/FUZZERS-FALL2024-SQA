@@ -1,0 +1,4 @@
+filename,test_name,test_id,issue_severity,issue_confidence,issue_cwe,issue_text,line_number,col_offset,end_col_offset,line_range,more_info
+./MLForensics-farzana/vulnerable.py,hardcoded_password_string,B105,LOW,MEDIUM,https://cwe.mitre.org/data/definitions/259.html,Possible hardcoded password: '12345',5,14,21,[5],https://bandit.readthedocs.io/en/1.7.10/plugins/b105_hardcoded_password_string.html
+./MLForensics-farzana/vulnerable.py,start_process_with_a_shell,B605,HIGH,HIGH,https://cwe.mitre.org/data/definitions/78.html,"Starting a process with a shell, possible injection detected, security issue.",9,4,35,[9],https://bandit.readthedocs.io/en/1.7.10/plugins/b605_start_process_with_a_shell.html
+./MLForensics-farzana/vulnerable.py,blacklist,B307,MEDIUM,HIGH,https://cwe.mitre.org/data/definitions/78.html,Use of possibly insecure function - consider using safer ast.literal_eval.,13,11,21,[13],https://bandit.readthedocs.io/en/1.7.10/blacklists/blacklist_calls.html#b307-eval
