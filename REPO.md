@@ -2,7 +2,7 @@
 ## REPO.md
 
 ### Project Overview
-This project integrates software quality assurance activities into the existing MLForensics Python project. It incorporates automation for testing, security analysis, fuzzing, and forensic logging based on concepts learned in the Software Quality Assurance course.
+The goal of this project was to piece together all of skills that we have learned through this semester's SQA workshops. Through the use of git hook, fuzzing, forensic logging, and continuous integration, our team was able to esnure that we can implement, test, and find errors within a set of code.
 
 ### Team Information
 Team Members: Shyam Patel - sjp0059
@@ -14,12 +14,9 @@ Team Members: Shyam Patel - sjp0059
 
 #### 4.a. Git Hook
 - A Git Hook was created to automatically scan for security weaknesses in the project whenever a Python file is modified and committed.
-- Output is stored in a CSV file named `hook_report.csv`.
 
 #### 4.b. Fuzzing
-- The `fuzz.py` script was implemented to test five critical Python methods.
-- The script automatically runs as part of the CI pipeline.
-- Bugs discovered during fuzzing are logged for review.
+- The `fuzz.py` script was implemented to test five  Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
 
 #### 4.c. Forensic Logging
 - Forensic logging was added to five methods:
@@ -30,41 +27,12 @@ Team Members: Shyam Patel - sjp0059
   5. Logging follows Python’s `logging` module for standardization and ease of use.
 
 #### 4.d. Continuous Integration
-- A GitHub Actions pipeline was implemented to:
-  - Run `pytest` to execute test cases and generate reports.
-  - Execute `fuzz.py` for automated fuzzing.
-  - Perform static security analysis with `Bandit`.
-- Workflow is triggered on every push and pull request to the `main` branch.
-
-### Execution Evidence
-#### Git Hook Output
-- The CSV report of security scans (`hook_report.csv`) contains the following columns:
-  - File Name
-  - Line Number
-  - Issue Description
-  - Severity Level
-
-#### Fuzzing Results
-- The `fuzz.py` script executed successfully, testing five methods.
-- No critical crashes were observed, but logs show detailed execution traces.
-
-#### Forensic Logs
-- Forensic logs provide a trail of execution for key methods. Examples include:
-  - `INFO: Executing giveTimeStamp method`
-  - `INFO: Analyzing file: sample.py`
-  - `INFO: Checking logging for data: user_input`
-
-#### CI Pipeline Logs
-- Test results and analysis outputs are generated in each pipeline run. Key reports include:
-  - `pytest` JUnit XML report
-  - `Bandit` security analysis report
-  - Fuzzing execution logs
+- A GitHub Actions pipeline was implemented to scan all of the code for bugs and security weaknesses.
 
 ### Lessons Learned
-- Integrating forensic logging can significantly improve traceability and debugging.
-- Fuzz testing is a robust approach to uncover edge cases and unexpected behaviors.
-- Continuous integration ensures code quality and reduces manual testing efforts.
-- Security tools like Bandit help identify vulnerabilities early in the development process.
+- Integrating forensic logging can significantly improve traceability and debugging efforts.
+- Fuzz testing is a great approach to find bugs and unexpected problems throughout the coding process.
+- Continuous integration ensures code quality and reduces the time that manual testing would take.
 
 ### Conclusion
-The project demonstrates a practical application of software quality assurance techniques, enabling a systematic approach to improving software reliability and security.
+This project demonstrates a practical application of software quality assurance techniques, allowing us to work together as a team to accomplish a common
