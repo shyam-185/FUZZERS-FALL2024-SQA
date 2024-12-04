@@ -16,7 +16,14 @@ Team Members: Shyam Patel - sjp0059
 - A Git Hook was created to automatically scan for security weaknesses in the project whenever a Python file is modified and committed.
 
 #### 4.b. Fuzzing
-- The `fuzz.py` script was implemented to test five  Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
+- The `fuzz.py` script was implemented to test five methods of our choosing which are:
+Method 1 - getFileLength from: /MLForensics-farzana/empirical/dataset.stats.py
+Method 2 getGeneralStats from: /MLForensics-farzana/empirical/dataset.stats.py
+Method 3 - dumpContentIntoFile from: MLForensics-farzana/mining/git.repo.miner.py
+Method 4 - getPythonCount from: MLForensics-farzana/mining/git.repo.miner.py
+Method 5 - giveTimeStamp from: MLForensics-farzana/FAME-ML/main.py
+
+For each method 3-5 test cases were created for fuzzing, common tests were None value or empty strings.
 
 #### 4.c. Forensic Logging
 - Forensic logging was added to five methods:
@@ -25,6 +32,8 @@ Team Members: Shyam Patel - sjp0059
   3. `checkLoggingPerData` in `py_parser.py` logs checks for data-related logging.
   4. Additional methods were identified and modified for meaningful forensic logs.
   5. Logging follows Python’s `logging` module for standardization and ease of use.
+
+The outupt was saved in fuzzers.log which state each method, time, output, exception error, input, etc.
 
 #### 4.d. Continuous Integration
 - A GitHub Actions pipeline was implemented to scan all of the code for bugs and security weaknesses.

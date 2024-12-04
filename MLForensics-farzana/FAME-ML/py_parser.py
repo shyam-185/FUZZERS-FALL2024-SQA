@@ -170,6 +170,7 @@ def commonAttribCallBody(node_):
     return full_list             
 
 
+
 def getPythonAtrributeFuncs(pyTree):
     '''
     detects func like class.funcName() 
