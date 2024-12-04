@@ -2,9 +2,9 @@
 import pytest
 import ast
 import os
-from FAME_ML.main import giveTimeStamp
-from FAME_ML.lint_engine import getDataLoadCount
-from FAME_ML.py_parser import checkLoggingPerData
+from main import giveTimeStamp
+from lint_engine import getDataLoadCount
+from py_parser import checkLoggingPerData
 
 def test_giveTimeStamp():
     # Test if giveTimeStamp returns a non-empty string
