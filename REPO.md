@@ -14,8 +14,10 @@ Team Members: Shyam Patel - sjp0059
 
 #### 4.a. Git Hook
 - A Git Hook was created to automatically scan for security weaknesses in the project whenever a Python file is modified and committed.
+- The weaknesses are reported in a CSV file, which includes file name, test name, test ID, test severity, etc.
 
 #### 4.b. Fuzzing
+<<<<<<< HEAD
 - The `fuzz.py` script was implemented to test five methods of our choosing which are:
 Method 1 - getFileLength from: /MLForensics-farzana/empirical/dataset.stats.py
 Method 2 getGeneralStats from: /MLForensics-farzana/empirical/dataset.stats.py
@@ -24,6 +26,9 @@ Method 4 - getPythonCount from: MLForensics-farzana/mining/git.repo.miner.py
 Method 5 - giveTimeStamp from: MLForensics-farzana/FAME-ML/main.py
 
 For each method 3-5 test cases were created for fuzzing, common tests were None value or empty strings.
+=======
+- The `fuzz.py` script was implemented to test the five modified Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
+>>>>>>> e4d440259188c0673466d001c5d72823fe61fb4f
 
 #### 4.c. Forensic Logging
 - Forensic logging was added to five methods:
@@ -37,11 +42,14 @@ The outupt was saved in fuzzers.log which state each method, time, output, excep
 
 #### 4.d. Continuous Integration
 - A GitHub Actions pipeline was implemented to scan all of the code for bugs and security weaknesses.
+- Creating this workflow allows the user to see all of the unit tests being run.
+- Tests were run using Codacy.
 
 ### Lessons Learned
 - Integrating forensic logging can significantly improve traceability and debugging efforts.
 - Fuzz testing is a great approach to find bugs and unexpected problems throughout the coding process.
 - Continuous integration ensures code quality and reduces the time that manual testing would take.
+- Collaboration within the coding world can significantly improve productivity and cuts down on the overall time that is required for the project.
 
 ### Conclusion
 This project demonstrates a practical application of software quality assurance techniques, allowing us to work together as a team to ensure that our final product picked up as many bugs and security flaws as possible.
