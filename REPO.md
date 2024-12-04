@@ -28,11 +28,14 @@ Team Members: Shyam Patel - sjp0059
 
 #### 4.d. Continuous Integration
 - A GitHub Actions pipeline was implemented to scan all of the code for bugs and security weaknesses.
+- Creating this workflow allows the user to see all of the unit tests being run.
+- Tests were run using Codacy.
 
 ### Lessons Learned
 - Integrating forensic logging can significantly improve traceability and debugging efforts.
 - Fuzz testing is a great approach to find bugs and unexpected problems throughout the coding process.
 - Continuous integration ensures code quality and reduces the time that manual testing would take.
+- Collaboration within the coding world can significantly improve productivity and cuts down on the overall time that is required for the project.
 
 ### Conclusion
 This project demonstrates a practical application of software quality assurance techniques, allowing us to work together as a team to ensure that our final product picked up as many bugs and security flaws as possible.
