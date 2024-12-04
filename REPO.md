@@ -35,4 +35,4 @@ Team Members: Shyam Patel - sjp0059
 - Continuous integration ensures code quality and reduces the time that manual testing would take.
 
 ### Conclusion
-This project demonstrates a practical application of software quality assurance techniques, allowing us to work together as a team to accomplish a common
+This project demonstrates a practical application of software quality assurance techniques, allowing us to work together as a team to ensure that our final product picked up as many bugs and security flaws as possible.
