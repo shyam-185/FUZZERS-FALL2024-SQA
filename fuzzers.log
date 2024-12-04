@@ -1,0 +1,48 @@
+2024-12-04 12:47:48,430:=== Fuzzing getFileLength ===
+2024-12-04 12:47:48,431:Test Case 1: Input=non_existent_file.txt, Exception=[Errno 2] No such file or directory: 'non_existent_file.txt'
+2024-12-04 12:47:48,431:Test Case 2: Input=None, Exception=expected str, bytes or os.PathLike object, not NoneType
+2024-12-04 12:47:48,431:Test Case 3: Input=, Exception=[Errno 2] No such file or directory: ''
+2024-12-04 12:47:48,431:=== Fuzzing getGeneralStats ===
+2024-12-04 12:47:48,431:Directory 'test_datasets' does not exist.
+2024-12-04 12:47:48,431:=== Fuzzing dumpContentIntoFile ===
+2024-12-04 12:47:48,431:Test Case 1: content=Hello, World!, file_path=fuzz_test/valid.txt, Size=13 bytes
+2024-12-04 12:47:48,431:Test Case 2: content=, file_path=fuzz_test/empty.txt, Size=0 bytes
+2024-12-04 12:47:48,431:Test Case 3: content=LongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContent, file_path=fuzz_test/long_content.txt, Size=1100 bytes
+2024-12-04 12:47:48,431:Test Case 4: content=None, file_path=null_content.txt, Exception=write() argument must be str, not None
+2024-12-04 12:47:48,431:Test Case 5: content=Hello, file_path=, Exception=File name cannot be empty.
+2024-12-04 12:47:48,431:=== Fuzzing getPythonCount ===
+2024-12-04 12:47:48,432:Test Case 1: dir_path=fuzz_test, Python File Count=0
+2024-12-04 12:47:48,432:Test Case 2: dir_path=fuzz_test, Python File Count=2
+2024-12-04 12:47:48,432:Test Case 3: dir_path=non_existent_directory, Python File Count=0
+2024-12-04 12:47:48,432:Test Case 4: dir_path=None, Exception=expected str, bytes or os.PathLike object, not NoneType
+2024-12-04 12:47:48,432:Test Case 5: dir_path=, Python File Count=0
+2024-12-04 12:47:48,432:=== Fuzzing giveTimeStamp ===
+1969-12-31 18:00:00,000:Test Case 1: Mocked time=0, Output=1969-12-31 18:00:00
+2038-01-18 21:14:07,000:Test Case 2: Mocked time=2147483647, Output=2038-01-18 21:14:07
+2038-01-18 21:14:08,000:Test Case 3: Mocked time=2147483648, Output=2038-01-18 21:14:08
+1969-12-31 17:59:59,000:Test Case 4: Mocked time=-1, Output=1969-12-31 17:59:59
+2024-12-04 12:47:48,432:Test Case 5: Mocked time=1733338068.432666, Output=2024-12-04 12:47:48
+2024-12-04 13:09:15,809:=== Fuzzing getFileLength ===
+2024-12-04 13:09:15,811:Test Case 1: Input=non_existent_file.txt, Exception=[Errno 2] No such file or directory: 'non_existent_file.txt'
+2024-12-04 13:09:15,811:Test Case 2: Input=None, Exception=expected str, bytes or os.PathLike object, not NoneType
+2024-12-04 13:09:15,811:Test Case 3: Input=, Exception=[Errno 2] No such file or directory: ''
+2024-12-04 13:09:15,811:=== Fuzzing getGeneralStats ===
+2024-12-04 13:09:15,811:Directory 'test_datasets' does not exist.
+2024-12-04 13:09:15,811:=== Fuzzing dumpContentIntoFile ===
+2024-12-04 13:09:15,811:Test Case 1: content=Hello, World!, file_path=fuzz_test/valid.txt, Size=13 bytes
+2024-12-04 13:09:15,811:Test Case 2: content=, file_path=fuzz_test/empty.txt, Size=0 bytes
+2024-12-04 13:09:15,811:Test Case 3: content=LongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContentLongContent, file_path=fuzz_test/long_content.txt, Size=1100 bytes
+2024-12-04 13:09:15,811:Test Case 4: content=None, file_path=null_content.txt, Exception=write() argument must be str, not None
+2024-12-04 13:09:15,811:Test Case 5: content=Hello, file_path=, Exception=File name cannot be empty.
+2024-12-04 13:09:15,812:=== Fuzzing getPythonCount ===
+2024-12-04 13:09:15,812:Test Case 1: dir_path=fuzz_test, Python File Count=0
+2024-12-04 13:09:15,812:Test Case 2: dir_path=fuzz_test, Python File Count=2
+2024-12-04 13:09:15,812:Test Case 3: dir_path=non_existent_directory, Python File Count=0
+2024-12-04 13:09:15,812:Test Case 4: dir_path=None, Exception=expected str, bytes or os.PathLike object, not NoneType
+2024-12-04 13:09:15,812:Test Case 5: dir_path=, Python File Count=0
+2024-12-04 13:09:15,812:=== Fuzzing giveTimeStamp ===
+1969-12-31 18:00:00,000:Test Case 1: Mocked time=0, Output=1969-12-31 18:00:00
+2038-01-18 21:14:07,000:Test Case 2: Mocked time=2147483647, Output=2038-01-18 21:14:07
+2038-01-18 21:14:08,000:Test Case 3: Mocked time=2147483648, Output=2038-01-18 21:14:08
+1969-12-31 17:59:59,000:Test Case 4: Mocked time=-1, Output=1969-12-31 17:59:59
+2024-12-04 13:09:15,812:Test Case 5: Mocked time=1733339355.812761, Output=2024-12-04 13:09:15
