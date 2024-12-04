@@ -14,9 +14,10 @@ Team Members: Shyam Patel - sjp0059
 
 #### 4.a. Git Hook
 - A Git Hook was created to automatically scan for security weaknesses in the project whenever a Python file is modified and committed.
+- The weaknesses are reported in a CSV file, which includes file name, test name, test ID, test severity, etc.
 
 #### 4.b. Fuzzing
-- The `fuzz.py` script was implemented to test five  Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
+- The `fuzz.py` script was implemented to test the five modified Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
 
 #### 4.c. Forensic Logging
 - Forensic logging was added to five methods:
