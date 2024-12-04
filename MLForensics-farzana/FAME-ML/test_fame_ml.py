@@ -22,14 +22,19 @@ def test_getDataLoadCount(tmp_path):
     assert count == 1
 
 def test_checkLoggingPerData():
-    # Create a mock Python code snippet
+    # Create a mock Python code snippet with logging
     code = '''
 import logging
 def example_function():
-    logging.info("Logging data load")
-'''
+    logging.info("This is a test log")
+    '''
     # Parse the code into an AST
     tree = ast.parse(code)
+    
+    # Test the checkLoggingPerData function
+    result = checkLoggingPerData(tree, "test log")
+    assert result is True
+
     
     # Test the checkLoggingPerData function
     result = checkLoggingPerData(tree, "data load")
