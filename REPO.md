@@ -18,11 +18,11 @@ Team Members: Shyam Patel - sjp0059
 
 #### 4.b. Fuzzing
 - The `fuzz.py` script was implemented to test five methods of our choosing which are:
-Method 1 - getFileLength from: /MLForensics-farzana/empirical/dataset.stats.py
-Method 2 getGeneralStats from: /MLForensics-farzana/empirical/dataset.stats.py
-Method 3 - dumpContentIntoFile from: MLForensics-farzana/mining/git.repo.miner.py
-Method 4 - getPythonCount from: MLForensics-farzana/mining/git.repo.miner.py
-Method 5 - giveTimeStamp from: MLForensics-farzana/FAME-ML/main.py
+1. Method 1 - getFileLength from: /MLForensics-farzana/empirical/dataset.stats.py
+2. Method 2 getGeneralStats from: /MLForensics-farzana/empirical/dataset.stats.py
+3. Method 3 - dumpContentIntoFile from: MLForensics-farzana/mining/git.repo.miner.py
+4. Method 4 - getPythonCount from: MLForensics-farzana/mining/git.repo.miner.py
+5. Method 5 - giveTimeStamp from: MLForensics-farzana/FAME-ML/main.py
 
 For each method 3-5 test cases were created for fuzzing, common tests were None value or empty strings.
 
