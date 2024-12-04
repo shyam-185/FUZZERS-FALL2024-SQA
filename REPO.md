@@ -17,7 +17,6 @@ Team Members: Shyam Patel - sjp0059
 - The weaknesses are reported in a CSV file, which includes file name, test name, test ID, test severity, etc.
 
 #### 4.b. Fuzzing
-<<<<<<< HEAD
 - The `fuzz.py` script was implemented to test five methods of our choosing which are:
 Method 1 - getFileLength from: /MLForensics-farzana/empirical/dataset.stats.py
 Method 2 getGeneralStats from: /MLForensics-farzana/empirical/dataset.stats.py
@@ -26,9 +25,6 @@ Method 4 - getPythonCount from: MLForensics-farzana/mining/git.repo.miner.py
 Method 5 - giveTimeStamp from: MLForensics-farzana/FAME-ML/main.py
 
 For each method 3-5 test cases were created for fuzzing, common tests were None value or empty strings.
-=======
-- The `fuzz.py` script was implemented to test the five modified Python methods of our choosing. The goal of this was to have any bugs that were caught reported and for scans to be run through GitHub Actions.
->>>>>>> e4d440259188c0673466d001c5d72823fe61fb4f
 
 #### 4.c. Forensic Logging
 - Forensic logging was added to five methods:
